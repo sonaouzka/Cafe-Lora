@@ -1,4 +1,6 @@
 import './style.css';
+import {Layer} from './Layer/index.js';
+
 
 console.log('funguju!');
 
@@ -42,4 +44,43 @@ orderBtnElm.addEventListener('click', order);
 
 // jiný postup: 
 
+
+// // 5.úkol - Ingredience jako komponenty
+
+
+const layerElm = document.querySelector('.drink__info');
+// layerElm.innerHTML += Layer({
+//     color: '#feeeca',
+//     label: 'mléčná pěna',  
+// });
+// layerElm.innerHTML += Layer({
+//     color: '#fed7b0',
+//     label: 'teplé mléko',
+// });
+// layerElm.innerHTML += Layer({
+//     color: '#613916',
+//     label: 'espresso',
+// });
+
+
+const layers = [
+    {
+      color: '#feeeca',
+      label: 'mléčná pěna',
+    },
+    {
+      color: '#fed7b0',
+      label: 'teplé mléko',
+    },
+    {
+      color: '#613916',
+      label: 'espresso',
+    },
+  ];
+
+
+for (let i = 0; i < layers.length; i += 1) {
+    layerElm.innerHTML += Layer(layers[i]);
+    console.log(layers[i]);
+}
 
