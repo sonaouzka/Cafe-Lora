@@ -90,7 +90,7 @@ const layers = [
 // 7.úkol - Nápoj jako komponenta - zakomentováno DRINK v html a přidávání ingrediencí komonenty Layer
 
 
-const drink1 = {
+const drinkRomano = {
     id: 'romano',
     name: 'Romano',
     ordered: false,
@@ -108,6 +108,7 @@ const drink1 = {
 
 
 const drinkListElm = document.querySelector('.drinks-list');
-drinkListElm.appendChild(Drink(drink1));
+drinkListElm.appendChild(Drink(drinkRomano));
 
-// 8.úkol - Dynamická komponenta nápojů
+
+
