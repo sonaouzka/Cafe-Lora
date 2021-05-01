@@ -1,5 +1,8 @@
 import './style.css';
-import {Layer} from './Layer/index.js';
+import { Layer } from './Layer/index.js';
+import './Layer/style.css';
+import './Drink/style.css';
+import { Drink } from './Drink/index.js';
 
 
 console.log('funguju!');
@@ -40,15 +43,14 @@ const order = ()  => {
     }
 };
 
-orderBtnElm.addEventListener('click', order);
+// orderBtnElm.addEventListener('click', order);
 
 // jiný postup: 
 
 
 // // 5.úkol - Ingredience jako komponenty
 
-
-const layerElm = document.querySelector('.drink__info');
+// const layerElm = document.querySelector('.drink__info');
 // layerElm.innerHTML += Layer({
 //     color: '#feeeca',
 //     label: 'mléčná pěna',  
@@ -79,8 +81,32 @@ const layers = [
   ];
 
 
-for (let i = 0; i < layers.length; i += 1) {
-    layerElm.innerHTML += Layer(layers[i]);
-    console.log(layers[i]);
-}
+  // 6.úkol - Seznam ingrediencí - musí být zakomentováno začátek 5.tky, protože řeší to samé
+// for (let i = 0; i < layers.length; i += 1) {
+//     layerElm.innerHTML += Layer(layers[i]);
+//     console.log(layers[i]);
+// }
+
+// 7.úkol - Nápoj jako komponenta - zakomentováno DRINK v html a přidávání ingrediencí komonenty Layer
+
+
+const drink1 = {
+    id: 'romano',
+    name: 'Romano',
+    ordered: false,
+    layers: [
+      {
+        color: '#fbdf5b',
+        label: 'citrón',
+      },
+      {
+        color: '#613916',
+        label: 'espresso',
+      },
+    ],
+  };
+
+
+const drinkListElm = document.querySelector('.drinks-list');
+drinkListElm.appendChild(Drink(drink1));
 
