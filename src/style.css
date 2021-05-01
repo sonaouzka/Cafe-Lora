@@ -238,6 +238,8 @@ nav a:hover {
 .gallery {
   padding-top: 0;
   height: 100vh;
+  display: flex;
+  align-items: center;
 
   color: white;
   background-image: url('./img/gallery.jpg');
@@ -263,8 +265,8 @@ nav a:hover {
 
 .cafePlace__info {
   text-align: center;
-  font-size: 2rem;
-  padding: 10rem;
+  font-size: 1rem;
+  padding: 3rem;
   background-color: rgba(68,68,68,0.8)
 }
 
