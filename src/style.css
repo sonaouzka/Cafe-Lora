@@ -261,6 +261,13 @@ nav a:hover {
   height: auto;
 }
 
+.cafePlace__info {
+  text-align: center;
+  font-size: 2rem;
+  padding: 10rem;
+  background-color: rgba(68,68,68,0.8)
+}
+
 @media (min-width: 576px) {
   .drink {
     width: 50%;
