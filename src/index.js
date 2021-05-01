@@ -26,22 +26,22 @@ for (let i = 0; i < navAllElm.length; i += 1) {
 
 // 4.úkol Objednávání
 
-const orderBtnElm = document.querySelector('.order-btn');
-const drinkCupElm = document.querySelector ('.drink__cup');
-let ordered = false;
+// const orderBtnElm = document.querySelector('.order-btn');
+// const drinkCupElm = document.querySelector ('.drink__cup');
+// let ordered = false;
 
 
-const order = ()  => {
-    if (ordered === false) {
-        drinkCupElm.classList.add('drink__cup--selected');
-        orderBtnElm.textContent = "Zrušit";
-        ordered = true;
-    } else {
-        drinkCupElm.classList.remove('drink__cup--selected');
-        orderBtnElm.textContent = "Objednat"
-        ordered = false;
-    }
-};
+// const order = ()  => {
+//     if (ordered === false) {
+//         drinkCupElm.classList.add('drink__cup--selected');
+//         orderBtnElm.textContent = "Zrušit";
+//         ordered = true;
+//     } else {
+//         drinkCupElm.classList.remove('drink__cup--selected');
+//         orderBtnElm.textContent = "Objednat"
+//         ordered = false;
+//     }
+// };
 
 // orderBtnElm.addEventListener('click', order);
 
@@ -110,3 +110,4 @@ const drink1 = {
 const drinkListElm = document.querySelector('.drinks-list');
 drinkListElm.appendChild(Drink(drink1));
 
+// 8.úkol - Dynamická komponenta nápojů
